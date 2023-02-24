@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "jest --watchAll"
+    "test": "jest",
+    "test-dev": "jest --watchAll"
   },
   "dependencies": {
     "prop-types": "^15.8.1",
