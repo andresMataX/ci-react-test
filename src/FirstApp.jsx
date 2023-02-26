@@ -4,9 +4,11 @@ import PropTypes from 'prop-types'
 export const FirstApp = ({ title, subtitle }) => {
   return (
     <>
-      <h1> {title} </h1>
+      <h1 data-testid="test-title"> {title} </h1>
       {/* <code>{JSON.stringify(newMessage)}</code> */}
-      <p>Soy un subtítulo con el poto de Moka {subtitle + 0} </p>
+      <p>Soy un subtítulo con el poto de Moka </p>
+      <p>{subtitle}</p>
+      <p>{subtitle}</p>
     </>
   )
 }
@@ -14,7 +16,7 @@ export const FirstApp = ({ title, subtitle }) => {
 FirstApp.propTypes = {
   // Definimos el tipo de dato de las props y si es obligatorio al usar el componente
   title: PropTypes.string.isRequired,
-  subtitle: PropTypes.number.isRequired,
+  subtitle: PropTypes.string.isRequired,
 }
 
 // Entran antes de los props, por eso no marcan error
