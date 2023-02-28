@@ -20,7 +20,7 @@ export const CounterApp = ({ value }) => {
 
   return (
     <>
-      <h1>CounterApp</h1>
+      <h1>CounterApp - Poto</h1>
       <h2>{counter}</h2>
       <button onClick={handleAdd}>+1</button>
       <button aria-label="btn-reset" onClick={handleReset}>
